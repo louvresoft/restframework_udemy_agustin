@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'categories',
     'drf_yasg',
     'django_filters',
+    'comments'
 ]
 
 MIDDLEWARE = [

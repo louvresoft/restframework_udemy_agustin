@@ -13,3 +13,6 @@ class Post(models.Model):
     published = models.BooleanField(default=False)
     user = models.ForeignKey(User, on_delete=SET_NULL, null=True) # cuando el usuario sea borrado el post no se va a borrar
     category = models.ForeignKey(Category, on_delete=SET_NULL, null=True)
+
+    def __str__(self):
+        return self.title
